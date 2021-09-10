@@ -1,0 +1,109 @@
+
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Sudoku</title>
+  <meta name="Sudoku" content="A mini project of game designing using javascript">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="A Basic HTML5 Template">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="A simple HTML5 Template for new projects.">
+  <meta property="og:image" content="image.png">
+
+
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=1.0">
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<header >
+  <h1 class="text-center">sudoku<span class="version">1.0.0</span></h1>
+  <div class="container w-100 mt-4">
+  <div class="row text-center">
+    
+  <div id="difficulty" class="col-4">
+    <h3>Difficulty</h3>
+    
+    <label>
+      <input id="diff-1" type="radio" value="easy" name="diff" checked>Easy
+    </label>
+    <label>
+      <input id="diff-2" type="radio" value="medium" name="diff" >Medium
+    </label>
+    <label>
+      <input id="diff-3" type="radio" value="Hard" name="diff">Hard
+    </label>
+  </div>
+  
+  <div id="time" class="col-4">
+    <h3>Time</h3>
+    <label>
+      <input id="time-1" type="radio" value="three" name="time" checked>3min    
+    </label>
+    <label>
+      <input id="time-2" type="radio" value="five" name="time">5min
+    </label>
+    <label>
+      <input id="time-3" type="radio" value="ten" name="time">10min
+    </label>
+  </div>
+  
+  <div id="theme" class="col-4">
+    <h3>Theme</h3>
+    <label><input id="theme-1" type="radio" value="light" name="theme" checked>light
+    </label>
+    <label><input id="theme-2" type="radio" value="dark" name="theme" >dark
+    </label>
+  </div>
+  
+  </div>
+  </div>
+  
+  <button id="start-btn" class="btn-dark d-block mx-auto mt-2">
+    Create new game
+  </button>
+  <hr>
+</header>
+  
+<body>
+  <div id="stats" class="container">
+    <p id="timer"><span class="min"></span><span id="hide" class="d-none">:</span><span class="sec"></span></p>
+    <p id="lives"></p>
+  </div>
+  
+  <div id="game">
+    <div id="board">
+      
+    </div>
+    <div id="number-container" class="d-none">
+      <p id="one">1</p>
+      <p id="two">2</p>
+      <p id="three">3</p>
+      <p id="four">4</p>
+      <p id="five">5</p>
+      <p id="six">6</p>
+      <p id="seven">7</p>
+      <p id="eight">8</p>
+      <p id="nine">9</p>
+    </div>
+    
+  </div>
+ 
+</body>
+<footer class="w-100 footer fixed-bottom text-center container-fluid bg-dark text-light pt-2">
+  <p>2021 all rights reserved</p>
+</footer>
+ <script src="js/script.js"></script>
+</html>
